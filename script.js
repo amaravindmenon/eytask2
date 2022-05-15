@@ -145,7 +145,6 @@ submit.addEventListener('click', () => {
 
     questionCount++;
 
-    deselectAll();
     if (questionCount < quizDB.length) {
         loadQuestion();
         const quiznumber = document.querySelector(".question-number");
@@ -174,6 +173,7 @@ function backquiz() {
     } else {
         questionCount--;
         loadQuestion();
+        deselectAll();
         const quiznumber = document.querySelector(".question-number");
         quiznumber.innerText = `${questionCount+1}.`;
     }
@@ -185,6 +185,7 @@ function nextquiz() {
     } else {
         questionCount++;
         loadQuestion();
+        deselectAll();
         const quiznumber = document.querySelector(".question-number");
         quiznumber.innerText = `${questionCount+1}.`;
     }
