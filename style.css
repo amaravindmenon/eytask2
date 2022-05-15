@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page1 {
+    background: url(image/Test_source.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page2 {
+    background: url(image/Test_source2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page4 {
+    background: url(image/Test_source4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page3 {
+    background: url(image/Test_source3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading {
+    width: 40%;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 80px 100px;
+}
+
+.result {
+    width: 50%;
+    padding-left: 80px;
+    padding-top: 250px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.completion {
+    width: 40%;
+    padding-left: 80px;
+    padding-top: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.page2heading {
+    width: 50%;
+    font-size: 55px;
+    color: #fff;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 70px 100px;
+}
+
+.start>button {
+    color: #fff;
+    background: #b4b4b4;
+    font-size: 24px;
+    padding: 20px 50px;
+    margin: 0px 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info {
+    width: 50%;
+    font-size: 26px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding: 10px 120px;
+}
+
+.info-points {
+    width: 50%;
+    font-size: 24px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding: 15px 70px;
+}
+
+.point-design {
+    display: flex;
+    list-style: none;
+    padding: 15px 0px;
+}
+
+.point-design>img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.next-prev {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    display: flex;
+}
+
+.fa-solid {
+    padding: 20px;
+    color: #b4b4b4;
+}
+
+.quizheading {
+    width: 60%;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding-top: 70px;
+    padding-left: 100px;
+}
+
+.question-head {
+    padding-top: 30px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.question-head>h1 {
+    font-size: 70px;
+    color: yellow;
+}
+
+.question-head>h2 {
+    color: white;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='checkbox']:after {
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: yellow;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='checkbox']:checked:after {
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: yellow;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+.answer-list>ul>li {
+    padding: 30px 180px;
+}
+
+.answer-list>ul>li>label {
+    font-size: 25px;
+    color: white;
+}
+
+.answer-list>ul>li>span {
+    padding: 0px 50px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.submit>button {
+    color: #fff;
+    background: #b4b4b4;
+    font-size: 24px;
+    padding: 20px 50px;
+    margin: 30px 170px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        width: 100%;
+        font-size: 30px;
+        padding: 100px 40px;
+    }
+    .page2heading {
+        width: 100%;
+        font-size: 35px;
+        padding: 70px 30px;
+    }
+    .info {
+        width: 100%;
+        font-size: 24px;
+        padding: 10px 40px;
+    }
+    .info-points {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+    .quizheading {
+        width: 100%;
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    .question-head {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .question-head>h1 {
+        font-size: 50px;
+    }
+    .question-head>h2 {
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: 22px;
+    }
+    .answer-list>ul>li {
+        padding: 30px 30px;
+    }
+    .submit>button {
+        font-size: 20px;
+        margin: 30px 30px;
+    }
+    .result {
+        width: 100%;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+    .completion {
+        width: 100%;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+}

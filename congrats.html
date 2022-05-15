@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="page4">
+        <div class="result">
+            <span id="scorepoints"> Your Score is 60% </span>
+        </div>
+        <div class="completion">
+            <span> You have successfully self-certified your completion of this training. Click Exit to close.</span>
+        </div>
+        <div class="next-prev">
+            <a href="quiz.html"><i class="fa-solid fa-circle-arrow-left fa-3x"></i></a>
+            <a href="quiz.html" style="opacity:0"><i class="fa-solid fa-circle-arrow-right fa-3x"></i></a>
+        </div>
+    </div>
+</body>
+
+<script>
+    var score = document.getElementById('scorepoints');
+    var scorevalue = localStorage.getItem('score');
+    if (scorevalue == null) {
+        score.innerHTML = "Please play the Quiz First";
+    } else {
+        score.innerHTML = "Your Score is " + scorevalue + "%";
+    }
+    localStorage.clear();
+</script>
+
+
+</html>

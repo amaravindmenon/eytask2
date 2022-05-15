@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="page3">
+        <div class="quizheading">
+            <span> Knowledge check questions: </span>
+        </div>
+        <div class="question-head">
+            <h1 class="question-number">1.</h1>
+            <h2 class="question"> QUESTION </h2>
+        </div>
+        <div class="answer-list">
+            <ul id="single">
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <span>A.</span>
+                    <label for="ans1" id="option1">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <span>B.</span>
+                    <label for="ans2" id="option2">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <span>C.</span>
+                    <label for="ans3" id="option3">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <span>D.</span>
+                    <label for="ans4" id="option4">Answer Option</label>
+                </li>
+            </ul>
+            <ul id="multiple">
+                <li>
+                    <input type="checkbox" name="answer" id="ans1" class="answer">
+                    <span>A.</span>
+                    <label for="ans1" id="option5">Answer Option</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="answer" id="ans2" class="answer">
+                    <span>B.</span>
+                    <label for="ans2" id="option6">Answer Option</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="answer" id="ans3" class="answer">
+                    <span>C.</span>
+                    <label for="ans3" id="option7">Answer Option</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="answer" id="ans4" class="answer">
+                    <span>D.</span>
+                    <label for="ans4" id="option8">Answer Option</label>
+                </li>
+            </ul>
+        </div>
+        <div class="submit">
+            <button id="submit"> SUBMIT </button>
+        </div>
+        <div class="next-prev">
+            <a onclick="backquiz()"><i class="fa-solid fa-circle-arrow-left fa-3x"></i></a>
+            <a onclick="nextquiz()"><i class="fa-solid fa-circle-arrow-right fa-3x"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
