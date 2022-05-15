@@ -5,7 +5,7 @@
 }
 
 .page1 {
-    background: url(image/Test_source.jpg) no-repeat center center fixed;
+    background: url(image/Test_source.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,28 +15,31 @@
 }
 
 .page2 {
-    background: url(image/Test_source2.jpg);
+    background: url(image/Test_source2.jpg) no-repeat center top fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     width: 100vw;
 }
 
 .page4 {
-    background: url(image/Test_source4.jpg);
+    background: url(image/Test_source4.jpg) no-repeat center top fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     width: 100vw;
 }
 
 .page3 {
-    background: url(image/Test_source3.jpg);
+    background: url(image/Test_source3.jpg) no-repeat center top fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     width: 100vw;
 }
@@ -56,7 +59,8 @@
     padding-left: 80px;
     padding-top: 250px;
     color: #fff;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 4vh;
 }
 
 .completion {
@@ -64,7 +68,8 @@
     padding-left: 80px;
     padding-top: 30px;
     color: #fff;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 5vh;
 }
 
 .page2heading {
@@ -139,7 +144,8 @@
 
 .quizheading {
     width: 60%;
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 7vh;
     color: #fff;
     font-weight: 100;
     font-family: sans-serif;
@@ -154,15 +160,19 @@
 }
 
 .question-head>h1 {
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: 8vh;
     color: yellow;
 }
 
 .question-head>h2 {
     color: white;
-    padding-top: 30px;
-    padding-left: 40px;
-    font-size: 30px;
+    /* padding-top: 30px;
+    padding-left: 40px; */
+    padding-left: 5vh;
+    padding-top: 3.5vh;
+    /* font-size: 30px; */
+    font-size: 4vh;
 }
 
 input[type='radio']:after {
@@ -216,29 +226,35 @@ input[type='checkbox']:checked:after {
 }
 
 .answer-list>ul>li {
-    padding: 30px 180px;
+    /* padding: 30px 180px; */
+    padding: 3vh 20vh;
 }
 
 .answer-list>ul>li>label {
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 3.5vh;
     color: white;
 }
 
 .answer-list>ul>li>span {
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
+    padding: 0vh 5vh;
     color: #fff;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 3.5vh;
 }
 
 .submit>button {
     color: #fff;
     background: #b4b4b4;
-    font-size: 24px;
-    padding: 20px 50px;
     margin: 30px 170px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    /* font-size: 24px; */
+    font-size: 3vh;
+    /* padding: 20px 50px; */
+    padding: 3vh 7vh;
 }
 
 @media only screen and (max-width: 768px) {
