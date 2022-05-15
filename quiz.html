@@ -67,6 +67,7 @@
         </div>
         <div class="submit">
             <button id="submit"> SUBMIT </button>
+            <button onclick="exit()"> EXIT </button>
         </div>
         <div class="next-prev">
             <a onclick="backquiz()"><i class="fa-solid fa-circle-arrow-left fa-3x"></i></a>
@@ -74,6 +75,15 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        function exit() {
+            confirm("Do you really want to exit from quiz?");
+            if (confirm) {
+                window.location.href = "index.html";
+                localStorage.clear();
+            }
+        }
+    </script>
 </body>
 
 </html>
