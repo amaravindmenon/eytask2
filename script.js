@@ -67,7 +67,7 @@ const submit = document.querySelector("#submit");
 
 const answers = document.querySelectorAll(".answer");
 
-let score = 0;
+// let score = 0;
 let questionCount = 0;
 
 const loadQuestion = () => {
@@ -120,13 +120,28 @@ const deselectAll = () => {
 
 submit.addEventListener('click', () => {
     const checkedAnswer = getCheckAnswer();
-    console.log(questionCount);
-    console.log(checkedAnswer);
 
     if (checkedAnswer === quizDB[questionCount].ans) {
-        score++;
+        if (localStorage.getItem('questionCount') === null) {
+            localStorage.setItem(questionCount, 1);
+        } else {
+            localStorage.removeItem(questionCount);
+            localStorage.setItem(questionCount, 1);
+        }
     } else if (JSON.stringify(checkedAnswer) === JSON.stringify(quizDB[questionCount].ans)) {
-        score++;
+        if (localStorage.getItem('questionCount') === null) {
+            localStorage.setItem(questionCount, 1);
+        } else {
+            localStorage.removeItem(questionCount);
+            localStorage.setItem(questionCount, 1);
+        }
+    } else {
+        if (localStorage.getItem('questionCount') === null) {
+            localStorage.setItem(questionCount, 0);
+        } else {
+            localStorage.removeItem(questionCount);
+            localStorage.setItem(questionCount, 0);
+        }
     }
 
     questionCount++;
@@ -140,29 +155,38 @@ submit.addEventListener('click', () => {
         location.href = "congrats.html";
     }
 
-    percent = (score * 100 / quizDB.length);
-    percent = Math.round(percent);
-    localStorage.setItem("score", percent);
+    let scoregained = 0;
+
+    for (let i = 0; i <= quizDB.length; i++) {
+        if (localStorage.getItem(i) === "1") {
+            scoregained++;
+        }
+    }
+    percent = (scoregained * 100 / quizDB.length);
+    percent2 = Math.round(percent);
+    console.log(percent);
+    localStorage.setItem("score", percent2);
 });
 
-// function backquiz() {
-//     if (questionCount === 0) {
-//         alert("You are at the first question");
-//     } else {
-//         questionCount--;
-//         loadQuestion();
-//         const quiznumber = document.querySelector(".question-number");
-//         quiznumber.innerText = `${questionCount+1}.`;
-//     }
-// }
 
-// function nextquiz() {
-//     if (questionCount === quizDB.length - 1) {
-//         alert("You are at the last question");
-//     } else {
-//         questionCount++;
-//         loadQuestion();
-//         const quiznumber = document.querySelector(".question-number");
-//         quiznumber.innerText = `${questionCount+1}.`;
-//     }
-// }
+function backquiz() {
+    if (questionCount === 0) {
+        alert("You are at the first question");
+    } else {
+        questionCount--;
+        loadQuestion();
+        const quiznumber = document.querySelector(".question-number");
+        quiznumber.innerText = `${questionCount+1}.`;
+    }
+}
+
+function nextquiz() {
+    if (questionCount === quizDB.length - 1) {
+        alert("You are at the last question");
+    } else {
+        questionCount++;
+        loadQuestion();
+        const quiznumber = document.querySelector(".question-number");
+        quiznumber.innerText = `${questionCount+1}.`;
+    }
+}
