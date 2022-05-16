@@ -27,7 +27,6 @@
         </div>
     </div>
 </body>
-
 <script>
     var score = document.getElementById('scorepoints');
     var scorevalue = localStorage.getItem('score');
@@ -39,8 +38,7 @@
     localStorage.clear();
 
     function exit() {
-        confirm("Do you really want to exit from quiz?");
-        if (confirm) {
+        if (confirm("Do you really want to exit from quiz?")) {
             window.location.href = "index.html";
             localStorage.clear();
         }
