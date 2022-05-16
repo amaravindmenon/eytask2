@@ -145,6 +145,7 @@ submit.addEventListener('click', () => {
 
     questionCount++;
 
+    deselectAll();
     if (questionCount < quizDB.length) {
         loadQuestion();
         const quiznumber = document.querySelector(".question-number");
